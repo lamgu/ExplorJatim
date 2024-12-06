@@ -1,0 +1,180 @@
+:root {
+  --primary: #e4ac12;
+  --primary2: #fff;
+  --primary3: #fff958;
+}
+
+* {
+  line-height: 20px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: var(--primary2);
+  font-size: 1.2rem;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.navigasi-atas {
+  width: 1000px;
+  margin: auto;
+}
+.layar-penuh {
+  width: 100%;
+}
+
+.layar-penuh {
+  width: 100%;
+}
+
+/* pengaturan navbar */
+
+nav {
+  z-index: 100;
+  color: var(--primary2);
+  text-align: center;
+  position: fixed;
+  line-height: 60px;
+  width: 100%;
+  height: 60;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+nav.hitam {
+  background-color: var(--primary2);
+}
+
+nav .logo {
+  float: left;
+  position: relative;
+  right: 150px;
+  line-height: 55px;
+  text-align: center;
+}
+
+nav .logo img {
+  height: 50px;
+  padding-top: 20px;
+}
+nav .menu {
+  position: relative;
+  left: 150px;
+  height: 60px;
+  max-width: 600px;
+}
+
+nav .menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav .menu ul li {
+  list-style-type: none;
+  float: left;
+  line-height: 60px;
+}
+
+nav ul li a {
+  color: var(--primary2);
+  text-align: center;
+  padding: 0px 16px 0px 16px;
+  font-family: "Fredoka";
+  transition: 0.5s;
+}
+
+nav ul li a:hover {
+  color: var(--primary);
+  font-size: 20px;
+}
+
+main .item1 {
+  position: absolute;
+  background-color: var(--primary);
+  height: 850px;
+  width: 100%;
+}
+
+.item1 .judul {
+  font-family: "Fredoka";
+  font-size: 65;
+  text-align: center;
+  margin-top: 150;
+  background-color: FCDE70;
+  padding: 30;
+  color: var(--primary);
+}
+
+.item1 blockquote {
+  margin-top: 30;
+  text-align: center;
+  font-family: "fredoka";
+  font-weight: 100;
+  font-size: 20px;
+  max-width: 700px;
+  position: relative;
+  left: 325;
+}
+
+.item2 {
+  position: absolute;
+  background-color: FCDE70;
+  height: 400px;
+  width: 100%;
+  top: 500;
+  
+}
+
+.item-gambar {
+  position: absolute;
+  bottom: 20px;
+  left: 20%;
+  width: max-content;
+  z-index: 999;
+}
+
+.item-gambar .gambar {
+  width: 250px;
+  display: flex;
+}
+
+.item-gambar .gambar img {
+  border-radius: 20px;
+  margin: 10;
+}
+
+
+
+.item2 .judul{
+  color: var(--primary2);
+  font-family: "Fredoka";
+  font-size: 65;
+  text-align: center;
+  margin-top: 150;
+  background-color: var(--primary);
+  padding: 30;
+  color: FCDE70;
+}
+
+.item2 blockquote ul {
+  width: 450px;
+  font-family: 'fredoka';
+  position: absolute  ;
+  left: 550;
+  list-style: none;
+  padding-top: 30;
+  
+}
+
+.item2 blockquote ul li{
+  font-weight: 100;
+  line-height: 1.6rem
+}
