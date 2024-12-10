@@ -2,6 +2,7 @@
   --primary: #e4ac12;
   --primary2: #fff;
   --primary3: #fff958;
+  --primary4: #fcde70;
 }
 
 * {
@@ -98,7 +99,7 @@ nav ul li a:hover {
 
 main .item1 {
   position: absolute;
-  background-color: var(--primary);
+  background-color: var(--primary4);
   height: 850px;
   width: 100%;
 }
@@ -108,29 +109,28 @@ main .item1 {
   font-size: 65;
   text-align: center;
   margin-top: 150;
-  background-color: FCDE70;
   padding: 30;
-  color: var(--primary);
+  color: var(--primary2);
 }
 
 .item1 blockquote {
   margin-top: 30;
   text-align: center;
   font-family: "fredoka";
-  font-weight: 100;
+  font-weight: 400;
   font-size: 20px;
   max-width: 700px;
   position: relative;
   left: 325;
+  color: var(--primary2);
 }
 
 .item2 {
   position: absolute;
-  background-color: FCDE70;
+  background-color: var(--primary2);
   height: 400px;
   width: 100%;
   top: 500;
-  
 }
 
 .item-gambar {
@@ -151,30 +151,47 @@ main .item1 {
   margin: 10;
 }
 
-
-
-.item2 .judul{
-  color: var(--primary2);
+.item2 .judul {
+  color: var(--primary4);
   font-family: "Fredoka";
   font-size: 65;
   text-align: center;
-  margin-top: 150;
-  background-color: var(--primary);
+  margin-top: 120;
   padding: 30;
-  color: FCDE70;
 }
 
 .item2 blockquote ul {
   width: 450px;
-  font-family: 'fredoka';
-  position: absolute  ;
+  font-family: "fredoka";
+  position: absolute;
   left: 550;
   list-style: none;
-  padding-top: 30;
-  
 }
 
-.item2 blockquote ul li{
-  font-weight: 100;
-  line-height: 1.6rem
+.item2 blockquote ul li {
+  font-weight: 400;
+  line-height: 1.6rem;
+  color: var(--primary4);
 }
+
+.item-gambar .gambar:nth-child(1) .gambar1,
+.item-gambar .gambar:nth-child(1) .gambar2,
+.item-gambar .gambar:nth-child(1) .gambar3{
+  transform: translateY(50px);
+  filter: blur(50px);
+  opacity: 0;
+  animation: showDetail 0.5s 0.1s linear 1 forwards;
+}
+
+@keyframes showDetail {
+  to {
+    transform: translateY(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+
