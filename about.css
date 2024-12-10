@@ -109,6 +109,7 @@ main .item1 {
   font-size: 65;
   text-align: center;
   margin-top: 150;
+  background-color: FCDE70;
   padding: 30;
   color: var(--primary2);
 }
@@ -122,7 +123,6 @@ main .item1 {
   max-width: 700px;
   position: relative;
   left: 325;
-  color: var(--primary2);
 }
 
 .item2 {
@@ -166,6 +166,7 @@ main .item1 {
   position: absolute;
   left: 550;
   list-style: none;
+  padding-top: 30;
 }
 
 .item2 blockquote ul li {
@@ -180,7 +181,7 @@ main .item1 {
   transform: translateY(50px);
   filter: blur(50px);
   opacity: 0;
-  animation: showDetail 0.5s 0.1s linear 1 forwards;
+  animation: showDetail 0.5s 0.5s linear 1 forwards;
 }
 
 @keyframes showDetail {
@@ -190,8 +191,3 @@ main .item1 {
     opacity: 1;
   }
 }
-
-
-
-
-
