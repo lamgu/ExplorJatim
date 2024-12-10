@@ -227,7 +227,7 @@ main .sambutan:nth-child(1) .intro2{
   transform: translateY(50px);
   filter: blur(50px);
   opacity: 0;
-  animation: showDetail 0.2s 0.5s linear 1 forwards;
+  animation: showDetail 0.5s 0.5\2s linear 1 forwards;
 }
 
 @keyframes showDetail {
